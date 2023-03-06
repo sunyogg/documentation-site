@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="styles.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Documentation</title>
+  </head>
+  <body>
+    <section>
+      <div class="content-body">
+        <ul class="content-list">
+          <li>
+            <a href="#" class="documentation-text">Documentation</a>
+          </li>
+          <li>
+            <a href="#first-content" class="content-text">Introduction</a>
+          </li>
+          <li>
+            <a href="#second-content" class="content-text">Variables</a>
+          </li>
+          <li>
+            <a href="#third-content" class="content-text">Lists</a>
+          </li>
+          <li>
+            <a href="#fourth-content" class="content-text">Dictionaries</a>
+          </li>
+          <li>
+            <a href="#fifth-content" class="content-text">Sets</a>
+          </li>
+          <li>
+            <a href="#sixth-content" class="content-text">print()</a>
+          </li>
+          <li>
+            <a href="#seventh-content" class="content-text">if..elif..else</a>
+          </li>
+          <li>
+            <a href="#eighth-content" class="content-text">for loop</a>
+          </li>
+          <li>
+            <a href="#ninth-content" class="content-text">while loop</a>
+          </li>
+          <li>
+            <a href="#tenth-content" class="content-text">Functions</a>
+          </li>
+          <li>
+            <a href="#eleventh-content" class="content-text">Reference</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <main>
+      <header class="head-title">
+        <img
+          class="python-logo"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/230px-Python-logo-notext.svg.png?20220821155029"
+          alt="Python logo"
+        />
+        <h1>The Python Tutorial</h1>
+      </header>
+      <section class="documentation">
+        <section id="first-content" class="first-content content-para">
+          <h3>Introduction</h3>
+          <p>
+            Python is an interpreted, object-oriented, high-level programming
+            language with dynamic semantics. Its high-level built in data
+            structures, combined with dynamic typing and dynamic binding, make
+            it very attractive for Rapid Application Development, as well as for
+            use as a scripting or glue language to connect existing components
+            together. Python's simple, easy to learn syntax emphasizes
+            readability and therefore reduces the cost of program maintenance.
+            Python supports modules and packages, which encourages program
+            modularity and code reuse. The Python interpreter and the extensive
+            standard library are available in source or binary form without
+            charge for all major platforms, and can be freely distributed.
+            Often, programmers fall in love with Python because of the increased
+            productivity it provides. Since there is no compilation step, the
+            edit-test-debug cycle is incredibly fast. Debugging Python programs
+            is easy: a bug or bad input will never cause a segmentation fault.
+            Instead, when the interpreter discovers an error, it raises an
+            exception. When the program doesn't catch the exception, the
+            interpreter prints a stack trace. A source level debugger allows
+            inspection of local and global variables, evaluation of arbitrary
+            expressions, setting breakpoints, stepping through the code a line
+            at a time, and so on. The debugger is written in Python itself,
+            testifying to Python's introspective power. On the other hand, often
+            the quickest way to debug a program is to add a few print statements
+            to the source: the fast edit-test-debug cycle makes this simple
+            approach very effective.
+          </p>
+        </section>
+        <section id="second-content" class="second-content content-para">
+          <h3>Variables</h3>
+          <p>
+            Variables are containers for storing data values. Python has no
+            command for declaring a variable. A variable is created the moment
+            you first assign a value to it. A Python variable is a name given to
+            a memory location. It is the basic unit of storage in a program. The
+            value stored in a variable can be changed during program execution.
+            <br />Varibles of type int:
+            <code class="codes">x = 5</code>
+            Variable of type str:
+            <code class="codes">y = "John"</code>
+            Varible of type float:
+            <code class="codes">z = 12.345</code>
+            Variables of type boolean:
+            <code class="codes">a = true</code>
+          </p>
+        </section>
+        <section id="third-content" class="third-content content-para">
+          <h3>Lists</h3>
+          <p>
+            Python knows a number of compound data types, used to group together
+            other values. The most versatile is the list, which can be written
+            as a list of comma-separated values (items) between square brackets.
+            Lists might contain items of different types, but usually the items
+            all have the same type. Lists are one of 4 built-in data types in
+            Python used to store collections of data.<br />
+            Defining a List:
+            <code class="codes">a = [1, 2, 3]</code>
+            A list can contain elements of multiple data types:
+            <code class="codes"
+              >b = [4, 5, 6, "apple", "mango", 4.5, true]</code
+            >
+          </p>
+        </section>
+        <section id="fourth-content" class="fourth-content content-para">
+          <h3>Dictionaries</h3>
+          <p>
+            Another useful data type built into Python is the dictionary.
+            Dictionaries are sometimes found in other languages as “associative
+            memories” or “associative arrays”. Unlike sequences, which are
+            indexed by a range of numbers, dictionaries are indexed by keys,
+            which can be any immutable type; strings and numbers can always be
+            keys. Tuples can be used as keys if they contain only strings,
+            numbers, or tuples; if a tuple contains any mutable object either
+            directly or indirectly, it cannot be used as a key. You can’t use
+            lists as keys, since lists can be modified in place using index
+            assignments, slice assignments, or methods like append() and
+            extend().
+          </p>
+          <p>
+            It is best to think of a dictionary as a set of key: value pairs,
+            with the requirement that the keys are unique (within one
+            dictionary). A pair of braces creates an empty dictionary: {}.
+            Placing a comma-separated list of key:value pairs within the braces
+            adds initial key:value pairs to the dictionary; this is also the way
+            dictionaries are written on output.<br />
+            Defining a Dictionary:
+            <code class="codes"
+              >d = {"name":"John", "age":23, "sex":"male",
+              "location":"california"}</code
+            >
+          </p>
+        </section>
+        <section id="fifth-content" class="fifth-content content-para">
+          <h3>Sets</h3>
+          <p>
+            Python also includes a data type for sets. A set is an unordered
+            collection with no duplicate elements. Basic uses include membership
+            testing and eliminating duplicate entries. Set objects also support
+            mathematical operations like union, intersection, difference, and
+            symmetric difference. Curly braces or the set() function can be used
+            to create sets. Note: to create an empty set you have to use set(),
+            not {}; the latter creates an empty dictionary, a data structure
+            that we discuss in the next section.<br />
+            Defining a set:
+            <code class="codes">s = ("apple", "mango", "banana", 28)</code>
+          </p>
+        </section>
+        <section id="sixth-content" class="sixth-content content-para">
+          <h3>The print() function</h3>
+          <p>
+            The print() function prints the specified message to the screen, or
+            other standard output device. The message can be a string, or any
+            other object, the object will be converted into a string before
+            written to the screen. Though it is not necessary to pass arguments
+            in the print() function, it requires an empty parenthesis at the end
+            that tells python to execute the function rather calling it by name.
+            Now, let’s explore the optional arguments that can be used with the
+            print() function.
+            <code class="codes"
+              >print("Hello World!") <br />
+              <span class="indent-2"> print(28)</span>
+            </code>
+          </p>
+        </section>
+        <section id="seventh-content" class="seventh-content content-para">
+          <h3>if..elif..else statement</h3>
+          <p>
+            if…elif…else are conditional statements that provide you with the
+            decision making that is required when you want to execute code based
+            on a particular condition. The if…elif…else statement used in Python
+            helps automate that decision making process.
+          </p>
+          <p>
+            The if condition is considered the simplest of the three and makes a
+            decision based on whether the condition is true or not. If the
+            condition is true, it prints out the indented expression. If the
+            condition is false, it skips printing the indented expression.
+            <code class="codes"
+              >if condition:<br />
+              <span class="indent-2">expression</span></code
+            >
+          </p>
+          <p>
+            The if-else condition adds an additional step in the decision-making
+            process compared to the simple if statement. The beginning of an
+            if-else statement operates similar to a simple if statement;
+            however, if the condition is false, instead of printing nothing, the
+            indented expression under else will be printed.
+            <codes class="codes"
+              >if condition: <br />
+              <span class="indent-2">expression<br /></span>
+              else:<br />
+              <span class="indent-2">expression</span></codes
+            >
+          </p>
+        </section>
+        <section id="eighth-content" class="eighth-content content-para">
+          <h3>The for loop</h3>
+          <p>
+            The for statement in Python differs a bit from what you may be used
+            to in C or Pascal. Rather than always iterating over an arithmetic
+            progression of numbers (like in Pascal), or giving the user the
+            ability to define both the iteration step and halting condition (as
+            C), Python’s for statement iterates over the items of any sequence
+            (a list or a string), in the order that they appear in the sequence.
+            <code class="codes"
+              >words = ['cat', 'window', 'defenestrate']<br />
+              for i in words :<br />
+              <span class="indent-2">print(i)</span>
+            </code>
+          </p>
+        </section>
+        <section id="ninth-content" class="ninth-content content-para">
+          <h3>The while loop</h3>
+          <p>
+            The while statement is used for repeated execution as long as an
+            expression is true. The while loop requires relevant variables to be
+            ready, in this example we need to define an indexing variable, i,
+            which we set to 1. With the break statement we can stop the loop
+            even if the while condition is true:
+            <code class="codes">
+              i = 1 <br />
+              while i &lt; 6: <br />
+              <span class="indent-2">print(i)<br /></span>
+              <span class="indent-2"> if i == 3: <br /></span>
+              <span class="indent-4">break <br /></span>
+              <span class="indent-2">i += 1 <br /></span>
+            </code>
+          </p>
+        </section>
+        <section id="tenth-content" class="tenth-content content-para">
+          <h3>Functions</h3>
+          <p>
+            A function is a block of code which only runs when it is called. You
+            can pass data, known as parameters, into a function. A function can
+            return data as a result.
+            <code class="codes"
+              >def my_function(): <br />
+              <span class="indent-2">print("Hello from a function")</span></code
+            >
+          </p>
+          <p>
+            To call a function, use the function name followed by parenthesis:
+            <code class="codes"
+              >def my_function():<br />
+              <span class="indent-2">print("Hello from a function")<br /></span>
+              my_function()</code
+            >
+          </p>
+        </section>
+        <section id="eleventh-content" class="eleventh-content content-para">
+          <h3>Reference</h3>
+          <p>
+            For more info visit
+            <a
+              class="doc-link"
+              href="https://docs.python.org/3/contents.html"
+              target="_blank"
+              >Python Docs</a
+            >.
+          </p>
+        </section>
+      </section>
+      <footer>
+        <p class="footer-text">
+          Copyright ©2001-2023. Python Software Foundation Legal Statements
+          Privacy Policy Powered by Heroku
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
